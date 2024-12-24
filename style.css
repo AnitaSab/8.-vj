@@ -1,0 +1,83 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Headline */
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transition for text color and transform */
+}
+
+.headline:hover {
+    color: #ff6347; /* Red color on hover */
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+/* Button */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff6347; /* Red color on hover */
+    color: white; /* Keep text white */
+    transform: scale(1.1); /* Button scale effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(255, 99, 71, 0.6); /* Glow effect when focused */
+}
+
+button:active {
+    transform: scale(0.95); /* Slight shrink when button is clicked */
+    background-color: #ff4500; /* Change background on active */
+}
+
+/* Box */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #28a745; /* Initial green color */
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.box:hover {
+    background-color: #ff6347; /* Red color on hover */
+    transform: rotate(45deg); /* Rotate box on hover */
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+
+
+
